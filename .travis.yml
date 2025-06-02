@@ -4,7 +4,7 @@ language: generic
 vm:
   size: [large]
   create:
-    name: large_timeout
+    name: large_timeout_02
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
