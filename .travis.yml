@@ -2,9 +2,9 @@ os: linux
 dist: focal
 language: generic
 vm:
-  size: [large]
+  size: [small]
   create:
-    name: large_timeout_02
+    name: small_timeout
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
@@ -12,5 +12,5 @@ addons:
     update: true
 script:
   - echo $TRAVIS_COMMIT_MESSAGE
-  - sleep 6
+  - sleep 1
   - echo "OK"
