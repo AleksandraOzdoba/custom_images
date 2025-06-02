@@ -1,20 +1,11 @@
 os: linux
-language: generic
 dist: focal
+vm: #existing key
+create:
+name: my_custom_name #custom identifier string, human readable
+before_install:
 
-jobs:
-  include:
-    - name: "job one"
-      vm: 
-        create:
-          name: job_one
-      script: 
-        - echo "condition with job one"
-        - sleep 1
-    - name: "job two"
-      vm: 
-        create:
-          name: job_two
-      script: 
-        - echo "condition with job two"
-        - sleep 2
+sudo apt-get -y install libxml2-dev
+addons:
+apt:
+update: true
