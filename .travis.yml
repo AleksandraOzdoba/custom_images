@@ -19,4 +19,4 @@ jobs:
           name: job_two
       script: 
         - echo "condition with job two"
-        - sleep 1
+        - sleep 2
