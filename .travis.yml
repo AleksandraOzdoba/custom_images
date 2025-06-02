@@ -1,3 +1,20 @@
-language: node_js
-script:
-  - echo 'OK'
+os: linux
+language: generic
+dist: focal
+
+jobs:
+  include:
+    - name: "job one"
+      vm: 
+        create:
+          name: job_one
+      script: 
+        - echo "condition with job one"
+        - sleep 1
+    - name: "job two"
+      vm: 
+        create:
+          name: job_two
+      script: 
+        - echo "condition with job two"
+        - sleep 2
