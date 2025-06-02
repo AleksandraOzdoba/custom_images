@@ -1,22 +1,16 @@
-os: freebsd
+os: linux
 dist: focal
-vm: 
+language: generic
+vm:
+  size: [large]
   create:
-    name: root_image_1
-
-jobs:
-  include:
-    - name: "job one"
-      vm: 
-        create:
-          name: job_one
-      script: 
-        - echo "condition with job one"
-        - sleep 1
-    - name: "job two"
-      vm: 
-        create:
-          name: job_two
-      script: 
-        - echo "condition with job two"
-        - sleep 2
+    name: large_timeout
+before_install:
+  - sudo apt-get -y install libxml2-dev
+addons:
+  apt:
+    update: true
+script:
+  - echo $TRAVIS_COMMIT_MESSAGE
+  - sleep 6
+  - echo "OK"
