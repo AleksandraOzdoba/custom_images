@@ -2,9 +2,9 @@ os: linux
 dist: focal
 language: generic
 vm:
-  size: [small]
+  #size: [large]
   create:
-    name: small_timeout
+    name: linux_02
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
