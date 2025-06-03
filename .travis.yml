@@ -27,6 +27,6 @@ jobs:
         create:
           name: 03_june_23
       script: 
-        - echo "condition with job threeeeee"
+        - echo "condition with job threeeyeee"
         - echo $TRAVIS_COMMIT_MESSAGE
         - sleep 70
