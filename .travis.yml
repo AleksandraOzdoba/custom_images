@@ -1,32 +1,32 @@
 os: linux
-language: generic
 dist: focal
-env:
-  global:
-    - JOB_DELAY=180
+
 jobs:
   include:
-    - stage: "Tests"
-      name: "Create custom image 1 (conflict)"
-      vm:
+    - name: "job one"
+      vm: 
+        size: [large]
         create:
-          name: job_conflict
-      script:
-        - echo "Running Job 1"
-        - sleep $JOB_DELAY
-    - stage: "Tests"
-      name: "Create custom image 2 (conflict)"
-      vm:
+          name: 03_june_04
+      script: 
+        - echo "condition with job onee"
+        - echo $TRAVIS_COMMIT_MESSAGE
+        - sleep 50
+    - name: "job two"
+      vm: 
+        size: [large]
         create:
-          name: job_conflict
-      script:
-        - echo "Running Job 2"
-        - sleep $JOB_DELAY
-    - stage: "Tests"
-      name: "Create unique custom image"
-      vm:
+          name: 03_june_05
+      script: 
+        - echo "condition with job two"
+        - echo $TRAVIS_COMMIT_MESSAGE
+        - sleep 60
+    - name: "job three"
+      vm: 
+        size: [large]
         create:
-          name: job_unique
-      script:
-        - echo "Running Unique Image Job"
-        - sleep $JOB_DELAY
+          name: 03_june_06
+      script: 
+        - echo "condition with job threeeeee"
+        - echo $TRAVIS_COMMIT_MESSAGE
+        - sleep 70
