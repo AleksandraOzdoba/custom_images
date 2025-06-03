@@ -7,7 +7,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_16
+          name: 03_june_20
       script: 
         - echo "condition with job onee"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -16,7 +16,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_17
+          name: 03_june_21
       script: 
         - echo "condition with job two"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -25,7 +25,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_18
+          name: 03_june_22
       script: 
         - echo "condition with job threeeeee"
         - echo $TRAVIS_COMMIT_MESSAGE
