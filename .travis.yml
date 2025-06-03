@@ -9,7 +9,7 @@ jobs:
         use:
           name: 03_june_01
       script: 
-        - echo "condition with job one"
+        - echo "condition with job onee"
         - echo $TRAVIS_COMMIT_MESSAGE
         - sleep 50
     - name: "job two"
