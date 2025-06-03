@@ -27,6 +27,6 @@ jobs:
         use:
           name: 02_image
       script: 
-        - echo "condition with job threee"
+        - echo "condition with job threeee"
         - echo $TRAVIS_COMMIT_MESSAGE
         - sleep 70
