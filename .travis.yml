@@ -6,7 +6,7 @@ jobs:
     - name: "job one"
       vm: 
         size: [large]
-        create:
+        use:
           name: 03_june_01
       script: 
         - echo "condition with job one"
@@ -15,7 +15,7 @@ jobs:
     - name: "job two"
       vm: 
         size: [large]
-        create:
+        use:
           name: 03_june_02
       script: 
         - echo "condition with job two"
@@ -24,7 +24,7 @@ jobs:
     - name: "job three"
       vm: 
         size: [large]
-        create:
+        use:
           name: 03_june_03
       script: 
         - echo "condition with job three"
