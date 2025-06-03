@@ -1,5 +1,5 @@
 os: linux
-dist: bionic
+dist: trusty
 
 jobs:
   include:
@@ -7,7 +7,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_10
+          name: 03_june_13
       script: 
         - echo "condition with job onee"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -16,7 +16,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_11
+          name: 03_june_14
       script: 
         - echo "condition with job two"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -25,7 +25,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_12
+          name: 03_june_15
       script: 
         - echo "condition with job threeeeee"
         - echo $TRAVIS_COMMIT_MESSAGE
