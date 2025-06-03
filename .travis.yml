@@ -1,5 +1,5 @@
 os: linux
-dist: focal
+dist: xenial
 
 jobs:
   include:
@@ -7,7 +7,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_04
+          name: 03_june_07
       script: 
         - echo "condition with job onee"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -16,7 +16,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_05
+          name: 03_june_08
       script: 
         - echo "condition with job two"
         - echo $TRAVIS_COMMIT_MESSAGE
@@ -25,7 +25,7 @@ jobs:
       vm: 
         size: [large]
         create:
-          name: 03_june_06
+          name: 03_june_09
       script: 
         - echo "condition with job threeeeee"
         - echo $TRAVIS_COMMIT_MESSAGE
