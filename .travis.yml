@@ -6,7 +6,7 @@ jobs:
     - name: "job one"
       vm: 
         size: [large]
-        create:
+        use:
           name: 12_june_1
       script: 
         - echo "condition with job onee"
