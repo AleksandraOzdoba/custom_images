@@ -5,7 +5,7 @@ jobs:
   include:
     - name: "job one"
       vm: 
-        size: [x-large]
+        #size: [x-large]
         create:
           name: 16_june_1
       script: 
